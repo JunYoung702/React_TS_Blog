@@ -1,0 +1,19 @@
+.Topmenu {
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.Topmenu .SidebarButton {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: cyan;
+    z-index: 2;
+}
