@@ -4,10 +4,19 @@
 .sidebar {
     display: flex;
     position: absolute;
-    width: 30vh;
+    width: 0px;
     bottom: 0px;
     top: 0px;
     z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.SidebarButton {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: cyan;
+    z-index: 2;
 }
 
 .topmenu {
@@ -16,6 +25,7 @@
     left: 0px;
     right: 0px;
     height: 20vh;
+    transition: margin-left 0.5s;
 }
 .mainpage {
     position: absolute;
@@ -23,4 +33,5 @@
     left: 0%;
     bottom: 0px;
     right: 0px;
+    transition: margin-left 0.5s;
 }

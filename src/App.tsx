@@ -15,35 +15,40 @@ class App extends React.Component {
         isSidebarOn: false,
     };
 
-    sidebarToggle = () =>
+    sidebarToggle = () => {
+        const sb = document.getElementById("sidebarLayout")!;
+        const m = document.getElementById("mainpage")!;
+        const t = document.getElementById("toppage")!;
+        if (this.state.isSidebarOn) {
+            sb.style.width = "0px";
+            m.style.marginLeft = "0px";
+            t.style.marginLeft = "0px";
+        } else {
+            sb.style.width = "250px";
+            m.style.marginLeft = "250px";
+            t.style.marginLeft = "250px";
+        }
+
         this.setState({ isSidebarOn: !this.state.isSidebarOn });
+    };
 
     render() {
-        if (this.state.isSidebarOn) {
-            return (
-                <div className="page-layout">
-                    <div className="mainpage">
-                        <Home />
-                    </div>
-                    <div className="sidebar">
-                        <Sidebar />
-                    </div>
-                    <div className="topmenu">
-                        <Topmenu handleClick={this.sidebarToggle} />
-                    </div>
+        return (
+            <div className="page-layout">
+                <button className="SidebarButton" onClick={this.sidebarToggle}>
+                    X
+                </button>
+                <div className="mainpage" id="mainpage">
+                    <Home />
                 </div>
-            );
-        } else
-            return (
-                <div className="page-layout">
-                    <div className="mainpage">
-                        <Home />
-                    </div>
-                    <div className="topmenu">
-                        <Topmenu handleClick={this.sidebarToggle} />
-                    </div>
+                <div className="sidebar" id="sidebarLayout">
+                    <Sidebar />
                 </div>
-            );
+                <div className="topmenu" id="toppage">
+                    <Topmenu />
+                </div>
+            </div>
+        );
     }
 }
 
