@@ -1,0 +1,22 @@
+.SidebarOpen {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    z-index: 2;
+}
+.SidebarClose {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    background-color: transparent;
+    font-size: 40px;
+    text-decoration: none;
+
+    z-index: 2;
+    color: white;
+}

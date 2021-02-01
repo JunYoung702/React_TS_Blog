@@ -1,0 +1,16 @@
+.Homepage {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    margin-left: inherit;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    position: absolute;
+
+    top: 20vh;
+    left: 0%;
+
+    right: 0px;
+}

@@ -1,0 +1,16 @@
+.postlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: darkcyan;
+}
+
+.eachpost {
+    font-size: 30px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

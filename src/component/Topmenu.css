@@ -1,11 +1,16 @@
 .Topmenu {
-    background-color: red;
+    background-color: darkgray;
+    background-image: url("../image/3.png");
     font-size: 20px;
     color: white;
     display: flex;
-    flex-direction: column;
+    margin-left: inherit;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
-    min-width: 100%;
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20vh;
 }
